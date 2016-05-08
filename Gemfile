@@ -3,6 +3,7 @@ ruby "2.3.1"
 
 gem "rails", "~> 4.2.6"
 gem "pg"
+gem "puma"
 gem "sass-rails", "~> 5.0"
 gem "slim"
 gem "uglifier", ">= 1.3.0"
