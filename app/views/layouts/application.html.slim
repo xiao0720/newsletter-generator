@@ -4,6 +4,7 @@ html lang="en"
 
 body
   = render "partials/navbar"
-  .row
-    .col-sm-10.col-sm-offset-1
-      = yield
+  .container-fluid
+    .row
+      .col-md-10.col-md-offset-1
+        = yield
