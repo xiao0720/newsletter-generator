@@ -1,0 +1,10 @@
+doctype html
+html lang="en"
+  = render "partials/head"
+
+body
+  = render "partials/navbar"
+  .container-fluid
+    .row
+      .col-md-10.col-md-offset-1
+        = yield
