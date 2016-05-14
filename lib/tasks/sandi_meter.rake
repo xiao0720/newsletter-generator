@@ -5,4 +5,8 @@ begin
     puts "Running Sandi_meter..."
     system "sandi_meter -d"
   end
+rescue LoadError
+  task :sandi_meter do
+    abort "Sandi-meter rake task is not available (you're probably in a production environment)"
+  end
 end

@@ -2,7 +2,6 @@
 desc "Run various code quality checks"
 task :checks => [
   :scss_lint,
-  # :jshint,
   :slim_lint,
   :rubocop,
   :sandi_meter,

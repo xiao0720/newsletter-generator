@@ -1,4 +1,10 @@
 # frozen_string_literal: true
-require "rubocop/rake_task"
+begin
+  require "rubocop/rake_task"
 
-RuboCop::RakeTask.new
+  RuboCop::RakeTask.new
+rescue LoadError
+  task :rubocop do
+    abort "Rubocop rake task is not available (you're probably in a production environment)"
+  end
+end
