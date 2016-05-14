@@ -1,6 +1,7 @@
 branches:
   only:
     - master
+    - configure-quality-checks
 language: ruby
 cache: bundler
 services:
