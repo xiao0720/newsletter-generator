@@ -9,7 +9,7 @@ gem "jbuilder"
 gem "jquery-rails"
 gem "pg"
 gem "puma"
-gem 'rails_12factor', group: :production
+gem "rails_12factor", group: :production
 gem "sass-rails"
 gem "slim"
 gem "turbolinks"
