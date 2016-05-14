@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 source "https://rubygems.org"
 ruby "2.3.1"
 
@@ -20,12 +21,16 @@ group :development do
 end
 
 group :development, :test do
+  gem "bundler-audit"
+  gem "brakeman", require: false
   gem "byebug"
-  gem "cucumber-rails", :require => false
+  gem "cucumber-rails", require: false
   gem "database_cleaner"
   gem "rails_best_practices"
   gem "rspec-rails"
   gem "roodi"
   gem "rubocop"
   gem "sandi_meter"
+  gem "scss_lint", require: false
+  gem "slim_lint"
 end
