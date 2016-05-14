@@ -1,0 +1,19 @@
+defautl: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: exampel_db_development
+
+test: &test
+  <<: *default
+  database: example_db_test
+
+production:
+  <<: *default
+  database: example_db_production
+
+cucumber:
+  <<: *test
