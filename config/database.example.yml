@@ -5,15 +5,15 @@ defautl: &default
 
 development:
   <<: *default
-  database: newsletter-generator_development
+  database: exampel_db_development
 
 test: &test
   <<: *default
-  database: newsletter-generator_test
+  database: example_db_test
 
 production:
   <<: *default
-  database: newsletter-generator_production
+  database: example_db_production
 
 cucumber:
   <<: *test
