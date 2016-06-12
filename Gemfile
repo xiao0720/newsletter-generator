@@ -4,7 +4,6 @@ ruby "2.3.1"
 
 gem "rails"
 
-gem "bootstrap-sass"
 gem "jbuilder"
 gem "jquery-rails"
 gem "pg"
